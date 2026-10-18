@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T19:51:49+00:00",
+  "title": "Design System: NOVA BUILDING & DESIGN LLC",
+  "extensions": {
+    "colorMeta": {
+      "blueprint-blue": {
+        "role": "neutral",
+        "displayName": "Blueprint Blue",
+        "canonical": "#173a66",
+        "oklch": "oklch(34.8% 0.087 256)",
+        "tonalRamp": [
+          "#00062e",
+          "#00234d",
+          "#1d406d",
+          "#3b5f8e",
+          "#5a7fb0",
+          "#7aa1d4",
+          "#9fc7fc",
+          "#c8f2ff"
+        ]
+      },
+      "blueprint-blue-2": {
+        "role": "neutral",
+        "displayName": "Second Sheet",
+        "canonical": "#14335b",
+        "oklch": "oklch(32.1% 0.080 256)",
+        "tonalRamp": [
+          "#00072c",
+          "#04234a",
+          "#214069",
+          "#3e5f8a",
+          "#5d7fad",
+          "#7da1d0",
+          "#a2c7f8",
+          "#ccf2ff"
+        ]
+      },
+      "blueprint-blue-3": {
+        "role": "neutral",
+        "displayName": "Footer Sheet",
+        "canonical": "#10294b",
+        "oklch": "oklch(28.1% 0.070 257)",
+        "tonalRamp": [
+          "#000828",
+          "#0b2445",
+          "#264064",
+          "#445f85",
+          "#627fa7",
+          "#83a0ca",
+          "#a7c6f2",
+          "#d1f1ff"
+        ]
+      },
+      "drafting-white": {
+        "role": "neutral",
+        "displayName": "Drafting White",
+        "canonical": "#f2f6fb",
+        "oklch": "oklch(97.2% 0.008 254)",
+        "tonalRamp": [
+          "#090b0e",
+          "#212428",
+          "#3d4044",
+          "#5b5e62",
+          "#7a7e82",
+          "#9b9fa3",
+          "#c1c4c9",
+          "#ebeff4"
+        ]
+      },
+      "drafting-white-2": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "canonical": "#bfd0e6",
+        "oklch": "oklch(85.2% 0.036 255)",
+        "tonalRamp": [
+          "#020b1a",
+          "#182535",
+          "#334153",
+          "#505f72",
+          "#6f7f93",
+          "#90a0b5",
+          "#b5c6dc",
+          "#dff0ff"
+        ]
+      },
+      "lion-gold": {
+        "role": "primary",
+        "displayName": "Lion Gold",
+        "canonical": "#d9cf45",
+        "oklch": "oklch(83.8% 0.154 105)",
+        "tonalRamp": [
+          "#170700",
+          "#312200",
+          "#4e4000",
+          "#6c6000",
+          "#8c8000",
+          "#ada200",
+          "#d3c93d",
+          "#faf492"
+        ]
+      },
+      "lion-gold-hi": {
+        "role": "primary",
+        "displayName": "Lion Gold High",
+        "canonical": "#e8df63",
+        "oklch": "oklch(88.7% 0.145 105)",
+        "tonalRamp": [
+          "#160700",
+          "#312300",
+          "#4d4000",
+          "#6b6000",
+          "#8b8000",
+          "#aca212",
+          "#d2c94b",
+          "#faf492"
+        ]
+      },
+      "on-gold": {
+        "role": "primary",
+        "displayName": "Ink on Gold",
+        "canonical": "#10264a",
+        "oklch": "oklch(27.3% 0.073 260)",
+        "tonalRamp": [
+          "#000729",
+          "#0d2346",
+          "#284066",
+          "#455e87",
+          "#647ea9",
+          "#84a0cc",
+          "#a9c6f4",
+          "#d2f0ff"
+        ]
+      },
+      "plan-cyan": {
+        "role": "secondary",
+        "displayName": "Plan Cyan",
+        "canonical": "#7fd1ff",
+        "oklch": "oklch(82.5% 0.103 235)",
+        "tonalRamp": [
+          "#000a2f",
+          "#00284d",
+          "#00466d",
+          "#00668f",
+          "#3287b1",
+          "#57a9d5",
+          "#7dcffd",
+          "#a8faff"
+        ]
+      },
+      "lawn-green": {
+        "role": "tertiary",
+        "displayName": "Lawn Green",
+        "canonical": "#9fd4a6",
+        "oklch": "oklch(82.1% 0.084 148)",
+        "tonalRamp": [
+          "#001300",
+          "#002e08",
+          "#194c25",
+          "#396b42",
+          "#598b61",
+          "#7aad81",
+          "#9fd4a6",
+          "#c8ffcf"
+        ]
+      },
+      "error-coral": {
+        "role": "error",
+        "displayName": "Error Coral",
+        "canonical": "#ffb4a8",
+        "oklch": "oklch(83.8% 0.090 29)",
+        "tonalRamp": [
+          "#260000",
+          "#460b06",
+          "#672a22",
+          "#89483f",
+          "#ac685e",
+          "#d0897e",
+          "#f9aea3",
+          "#ffd8cc"
+        ]
+      },
+      "drafting-line": {
+        "role": "neutral",
+        "displayName": "Drafting Line",
+        "canonical": "rgba(196,218,244,.28)"
+      },
+      "drafting-line-soft": {
+        "role": "neutral",
+        "displayName": "Soft Line",
+        "canonical": "rgba(196,218,244,.12)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; uppercase condensed, one phrase in gold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service-row names and step titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading copy, sentence case, 30em max for ledes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button text, field labels and legends; 12px/.12em variant for plan annotations."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-rest",
+        "value": "0 6px 18px -8px rgba(5,14,30,.7)",
+        "purpose": "Only on the filled gold button."
+      },
+      {
+        "name": "stone-lift",
+        "value": "canvas fill rgba(6,18,38,.38-.4), offset 2-6px scaled by lift",
+        "purpose": "Pavers mid-drop in the hero plan; fades as they settle."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": ".2s (color/background/border), .12s transform",
+        "purpose": "Buttons, row arrows, Facebook bar; removed under reduced motion."
+      },
+      {
+        "name": "field-state",
+        "value": ".15s border-color",
+        "purpose": "Inputs and chips."
+      },
+      {
+        "name": "stone-drop",
+        "value": "380ms ease-out cubic, scale 1.28 to 1",
+        "purpose": "A paver dropping into the patio."
+      },
+      {
+        "name": "self-lay",
+        "value": "idle 2.6s, lay ~11s, hold 6.5s, fade 900ms",
+        "purpose": "Hero patio lays itself when untouched, then resets."
+      },
+      {
+        "name": "lawn-sway",
+        "value": "spring K 38, damp 6.5, push radius 64px, max 11px; sway .16/.09 rad at speed 1.7",
+        "purpose": "Tufts sway and part under the pointer."
+      },
+      {
+        "name": "lawn-seam",
+        "value": "two sines, 5px @1.2 and 3px @1.9 opposite directions, 56px strip",
+        "purpose": "Moving color seam between section sheets."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Hero drawn fully laid with fire lit; lawn strips painted once; no loop, no smooth scroll."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "max-width: 379px"
+      },
+      {
+        "name": "tablet",
+        "value": "700px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "The single filled action per decision: text Jeff or send the estimate.",
+      "html": "<div class=\"ds-bg\"><a class=\"ds-btn ds-btn-gold\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z\"/></svg>Text Jeff</a></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground);padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 18px;border-radius:10px;border:2px solid var(--gold);font:800 18px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid var(--cyan);outline-offset:3px} .ds-btn svg{width:19px;height:19px} .ds-btn-gold{background:var(--gold);color:var(--on-gold);box-shadow:0 6px 18px -8px rgba(5,14,30,.7)} .ds-btn-gold:hover{background:var(--gold-hi);border-color:var(--gold-hi)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action beside the gold button (Free estimate).",
+      "html": "<div class=\"ds-bg\"><a class=\"ds-btn ds-btn-line\" href=\"#\">Free estimate</a></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground);padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 18px;border-radius:10px;border:2px solid var(--gold);font:800 18px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid var(--cyan);outline-offset:3px} .ds-btn svg{width:19px;height:19px} .ds-btn-line{background:transparent;color:var(--ink)} .ds-btn-line:hover{background:rgba(217,207,69,.12);color:var(--gold-hi)}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Deep-blue well; cyan outline on hover and focus.",
+      "html": "<div class=\"ds-bg\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First and last name\"></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground);padding:24px;display:grid;gap:8px} .ds-label{font:800 18px/1.1 var(--display);text-transform:uppercase;letter-spacing:.04em;color:var(--ink)} .ds-input{width:100%;min-height:52px;padding:12px 14px;border-radius:8px;border:1.5px solid var(--line);background:var(--ground-3);color:var(--ink);font:400 17px/1.4 var(--body);caret-color:var(--gold);transition:border-color .15s} .ds-input::placeholder{color:#9db2cd} .ds-input:hover{border-color:var(--cyan)} .ds-input:focus{outline:2px solid var(--cyan);outline-offset:1px;border-color:var(--cyan)}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox/radio chip; cyan border on hover, gold fill when checked.",
+      "html": "<div class=\"ds-bg\"><label class=\"ds-chip\"><input type=\"checkbox\"><span>Patio or walkway</span></label><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Demolition</span></label></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground);padding:24px;display:flex;flex-wrap:wrap;gap:8px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px} .ds-chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 15px;border-radius:8px;border:1.5px solid var(--line);color:var(--ink);font:600 15.5px/1.2 var(--body);cursor:pointer;transition:border-color .15s,background .15s,color .15s} .ds-chip span:hover{border-color:var(--cyan)} .ds-chip input:focus-visible+span{border-color:var(--cyan);outline:2px solid var(--cyan);outline-offset:2px} .ds-chip input:checked+span{background:var(--gold);border-color:var(--gold);color:var(--on-gold)} .ds-chip input:checked+span:hover{border-color:var(--cyan)}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Schedule-style service row; only the arrow highlights on hover.",
+      "html": "<div class=\"ds-bg\"><a class=\"ds-row\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 32 32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"19\" height=\"14\"/><path d=\"M3 10h19M9 3v7M16 3v7M12.5 10v7M6 10v7M19 10v7\"/></svg><span class=\"ds-name\">Patios &amp; walkways</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground-2);padding:24px} .ds-row{display:flex;align-items:center;gap:16px;min-height:72px;padding:12px 2px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none} .ds-row:hover,.ds-row:focus-visible{outline:none;background:none} .ds-ico{width:34px;height:34px;flex:none;color:var(--gold)} .ds-name{flex:1;font:800 clamp(22px,6vw,28px)/1.05 var(--display);text-transform:uppercase;letter-spacing:.01em} .ds-arrow{display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:50%;border:1.5px solid var(--line);transition:background .2s,border-color .2s,color .2s} .ds-arrow svg{width:18px;height:18px} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--gold);border-color:var(--gold);color:var(--on-gold)} .ds-row:focus-visible .ds-arrow{outline:3px solid var(--cyan);outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Lion + wordmark left, phone number top-right; no menu, not sticky.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><i class=\"ds-lion\"></i><span class=\"ds-word\"><b>NOVA</b><span>Building &amp; Design LLC</span></span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z\"/></svg>732-328-0507</a></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:var(--ground)} .ds-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px} .ds-lion{display:block;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold-hi),#b9ae2a 70%)} .ds-word{display:flex;flex-direction:column;line-height:1} .ds-word b{font:800 21px/1 var(--body);letter-spacing:.32em;color:var(--gold)} .ds-word span{font:700 11.5px/1 var(--display);letter-spacing:.06em;color:var(--ink-2);margin-top:4px;text-transform:uppercase} .ds-tel{display:flex;align-items:center;gap:7px;min-height:44px;font:700 16px/1 var(--body);text-decoration:none;white-space:nowrap;color:var(--ink)} .ds-tel svg{width:17px;height:17px;color:var(--gold)} .ds-tel:hover{color:var(--gold-hi)} .ds-tel:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}"
+    },
+    {
+      "name": "Photo Frame",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Hairline frame with gold registration-mark corners for real job photos.",
+      "html": "<div class=\"ds-bg\"><figure class=\"ds-shot\"><div class=\"ds-img\"></div></figure></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground);padding:24px} .ds-shot{position:relative;margin:0;padding:8px;border:1px solid var(--line);max-width:320px} .ds-shot::before,.ds-shot::after{content:\"\";position:absolute;width:14px;height:14px;border-color:var(--gold);border-style:solid} .ds-shot::before{top:-1px;left:-1px;border-width:2px 0 0 2px} .ds-shot::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0} .ds-img{aspect-ratio:4/3;background:var(--ground-2)}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Process step with a gold hairline counter ring.",
+      "html": "<div class=\"ds-bg\"><ol class=\"ds-steps\"><li><h3>Tell us the idea</h3><p>Text or call with what you're picturing.</p></li><li><h3>We come take a look</h3><p>A straight, free estimate.</p></li></ol></div>",
+      "css": ":host{--ground:#173a66;--ground-2:#14335b;--ground-3:#10294b;--ink:#f2f6fb;--ink-2:#bfd0e6;--line:rgba(196,218,244,.28);--gold:#d9cf45;--gold-hi:#e8df63;--on-gold:#10264a;--cyan:#7fd1ff;--err:#ffb4a8;--display:\"Avenir Next Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-bg{background:var(--ground-2);padding:24px;color:var(--ink)} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:18px;counter-reset:s} .ds-steps li{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;counter-increment:s} .ds-steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;font:800 22px/1 var(--display);color:var(--gold)} .ds-steps h3{margin:0;font:800 24px/1.1 var(--display);text-transform:uppercase;padding-top:2px} .ds-steps p{margin:0;color:var(--ink-2);font:400 17px/1.55 var(--body)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Jeff's Backyard Plan",
+    "overview": "The whole site is a landscape site-plan sheet. Every surface is blueprint blue with white drafting linework, and the hero is a live plan drawing: a hatched house footprint, a door swing, a dashed patio outline, a fire-pit ring, stepping-stone outlines and a north arrow. The visitor drags a finger or mouse across it and pavers drop into the patio. \"Building & Design\" is something the visitor does on the page. Real stone colors show up only where something gets built. Everything else stays blue, white and line.\n\nDensity is phone-first and generous. Headlines are huge condensed caps, there is one promise line, and the actions are big tap targets. The page reads as a stack of sheets (blue, second blue, blue) separated by strips of drawn lawn whose tufts sway. A wavy color seam moves underneath them, so the lower sheet's color rises up under the grass. Lion gold is the trim color from the logo. Cyan is the drafting-pen color of interaction and only appears when something is hovered or focused.\n\nThe build rejects the contractor defaults it was made against: a stock patio photo as the hero, a gold-and-black banner, and grids of icon cards. Black grounds are out entirely. The darkest surface is still blue.",
+    "keyCharacteristics": [
+      "Blueprint-blue sheets only, with a drafting grid and white linework. No black or neutral-gray grounds.",
+      "Condensed heavy uppercase for display, drawn from the system font stack to match the logo's \"BUILDING & DESIGN\".",
+      "Lion gold as trim and as the single filled action. Plan cyan only for hover and focus.",
+      "Signature motion: the visitor lays pavers in the hero, and lawn tufts sway with a moving seam between sections.",
+      "With reduced motion, the plan shows as a finished still drawing."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Ground Rule",
+        "body": "Every surface is one of the three blueprint blues. No black, near-black or neutral-gray ground, including the footer and overscroll.",
+        "section": "colors"
+      },
+      {
+        "name": "The Built-Things-Only Rule",
+        "body": "Stone, sand, bluestone and fire colors appear only where something is constructed in a drawing. Interface chrome never borrows them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hover-Only Accent Rule",
+        "body": "Plan cyan, and the gold fill on row arrows and the Facebook link, appear only in response to hover or focus. At rest, gold is limited to trim and the single filled Text button.",
+        "section": "colors"
+      },
+      {
+        "name": "The System Stack Rule",
+        "body": "Display and body both come from the system font stack. The condensed heavy caps come from Avenir Next Condensed, Roboto Condensed or Arial Narrow. Don't load webfonts.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caps Are Display Rule",
+        "body": "Uppercase condensed type is for headlines, row names, button text, field labels and plan annotations. Reading copy is always sentence case in the body face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone Top-Right Rule",
+        "body": "On the first screen, the phone number appears only as the top-right header link. Email appears only in the footer. There is no sticky bottom bar or floating call button.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Cards, rows, photos and the form sit flat on the sheet, framed by hairlines. Depth means a deeper blue or a drawn object, never a floating panel.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every ground on blueprint blue, second sheet or footer sheet, and switch between them only with a lawn strip.",
+      "Do set headlines, row names, buttons and field labels in the condensed heavy caps from the system stack (Avenir Next Condensed / Roboto Condensed / Arial Narrow) at weight 800.",
+      "Do keep lion gold to trim plus the one filled button per decision, with navy ink on any gold fill.",
+      "Do outline form controls in plan cyan on hover and focus, and use the 3px cyan focus ring everywhere else.",
+      "Do draw new illustration as plan symbols: dashed means planned, filled stone means built, white linework on the drafting grid.",
+      "Do give every animated drawing a finished still frame under reduced motion, and run animation only while it is on screen."
+    ],
+    "donts": [
+      "Don't use black, near-black or neutral-gray grounds anywhere, including the footer.",
+      "Don't put the phone number anywhere on the first screen except the top-right header link. Don't show email outside the footer, and don't add a sticky bottom bar or floating call button.",
+      "Don't highlight a whole service row on hover. Only its arrow fills gold.",
+      "Don't show cyan, or gold fills on rows and links, at rest. The accent appears on hover and focus only.",
+      "Don't use a stock patio photo as the hero, a gold-and-black banner, or icon-card grids for services.",
+      "Don't load webfonts, and don't set reading copy in caps.",
+      "Don't use stone, sand or fire colors in interface chrome."
+    ]
+  }
+}
