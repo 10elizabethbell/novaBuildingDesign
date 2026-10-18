@@ -26,6 +26,72 @@
         ],
         "createdAt": "2026-10-18T19:39:51.143Z",
         "reason": "Claude: services list top border is a list rule above rows that carry 12px vertical padding, not a box"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "4px",
+        "createdAt": "2026-10-18T19:52:45.635Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#b9ae2a",
+        "createdAt": "2026-10-18T19:52:45.704Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#9db2cd",
+        "createdAt": "2026-10-18T19:52:45.770Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "20px",
+        "createdAt": "2026-10-18T19:52:45.838Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "24px",
+        "createdAt": "2026-10-18T19:52:45.907Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-18T19:52:45.975Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "14.5px",
+        "createdAt": "2026-10-18T19:52:46.043Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15.5px",
+        "createdAt": "2026-10-18T19:52:46.112Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "19px",
+        "createdAt": "2026-10-18T19:52:46.182Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-10-18T19:52:46.253Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "72px",
+        "createdAt": "2026-10-18T19:52:46.322Z",
+        "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
       }
     ]
   }
