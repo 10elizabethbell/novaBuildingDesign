@@ -11,6 +11,21 @@
         ],
         "createdAt": "2026-10-18T19:35:09.502Z",
         "reason": "Claude: imgs are lazy-loaded from inline base64 data blocks via data-img; src is set by script on approach"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-18T19:39:51.073Z",
+        "reason": "Ellie's house style (ellie-taste.md): system font stack; Roboto only appears as the Android system fallback"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T19:39:51.143Z",
+        "reason": "Claude: services list top border is a list rule above rows that carry 12px vertical padding, not a box"
       }
     ]
   }

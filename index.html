@@ -78,7 +78,7 @@ h2{font-size:clamp(38px,9vw,64px)}
 .plan-hint{position:absolute;right:12px;bottom:10px;margin:0;font:700 12px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);pointer-events:none;padding:4px 8px;background:rgba(23,58,102,.82);border-radius:4px}
 
 /* ---------- Lawn strips (dividers) ---------- */
-.lawn{display:block;width:100%;height:46px;touch-action:pan-y}
+.lawn{display:block;width:100%;height:56px;margin:-1px 0;touch-action:pan-y}
 
 /* ---------- Services ---------- */
 .sec{padding:56px 0 60px}
@@ -143,10 +143,8 @@ form .btn-gold:hover,form .btn-gold:focus-visible{outline:3px solid var(--cyan);
 /* ---------- Close ---------- */
 .close{text-align:left}
 .close .lede{margin:14px 0 0;font-size:20px;color:var(--ink-2);max-width:30em}
-.offer{display:inline-block;margin:22px 0 0;padding:10px 0;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);font:800 21px/1.15 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--gold)}
+.offer{margin:14px 0 0;font-size:17px;color:var(--ink-2)}
 .close .btn{margin-top:26px;width:100%;max-width:440px}
-.or{margin:14px 0 0;color:var(--ink-2)}
-.or a{color:var(--ink);font-weight:700}
 .where{margin:30px 0 0;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-2);display:grid;gap:4px}
 .where b{color:var(--ink);font-weight:700}
 
@@ -180,9 +178,8 @@ footer a:hover{color:var(--gold-hi);text-decoration:underline}
   .plan-hint{right:20px;bottom:16px}
   .top{max-width:1440px;padding:16px 48px}
   .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
-  .shots{grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto}
-  .shot:first-child{grid-column:auto;grid-row:span 2}
-  .shot:first-child img{height:100%;aspect-ratio:auto}
+  .shots{grid-template-columns:repeat(3,1fr)}
+  .shot:first-child{grid-column:auto}
   .est-grid{display:grid;grid-template-columns:.85fr 1fr;gap:64px;align-items:start}
   .est-grid .steps{margin-top:8px}
   .close-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:end}
@@ -237,7 +234,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M3 28h26M4 22h24M5 16h22M6 10h20"/><path d="M4 28v-6M11 28v-6M18 28v-6M25 28v-6M8 22v-6M15 22v-6M22 22v-6M9 16v-6M17 16v-6M24 16v-6"/><path d="M4 28l2-18M28 28l-2-18"/></svg>
         <span class="name">Pavers &amp; retaining walls</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="row js-sms" data-body="Hi Jeff, I'm interested in an outdoor living space. I'm in (town): " href="#estimate">
-        <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="19" r="6.5"/><circle cx="16" cy="19" r="2.6"/><path d="M4.5 13.5a13 13 0 0 1 23 0"/><path d="M7.4 15.4a10 10 0 0 1 17.2 0"/></svg>
+        <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="19" r="7"/><circle cx="16" cy="19" r="3.6"/><path d="M16 12v3.4M16 22.6V26M9 19h3.4M19.6 19H23M11 14l2.4 2.4M18.6 21.6L21 24M21 14l-2.4 2.4M13.4 21.6L11 24"/><path d="M4 15.5A12.5 12.5 0 0 1 28 15.5L25.3 16.4A9.7 9.7 0 0 0 6.7 16.4Z"/><path d="M15.5 19.6c-.9-1.2.4-2.2.5-3.4 1.2 1 1.5 2.4.6 3.5"/></svg>
         <span class="name">Outdoor living spaces</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="row js-sms" data-body="Hi Jeff, I'm interested in masonry or stonework. I'm in (town): " href="#estimate">
         <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M3 5l11-1 1 9-9 2-3-4zM16 4l12 2-1 8-11-1zM6 16l9-2 2 8-7 6-5-4zM18 14l9 1 1 9-8 4-3-6z"/></svg>
@@ -252,7 +249,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
-<canvas class="lawn" aria-hidden="true"></canvas>
+<canvas class="lawn" data-top="#14335b" data-bottom="#173a66" aria-hidden="true"></canvas>
 
 <section class="work sec" id="work" aria-labelledby="h-work">
   <div class="wrap">
@@ -266,7 +263,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
-<canvas class="lawn" aria-hidden="true"></canvas>
+<canvas class="lawn" data-top="#173a66" data-bottom="#14335b" aria-hidden="true"></canvas>
 
 <section class="estimate sec" id="estimate" aria-labelledby="h-est">
   <div class="wrap est-grid">
@@ -305,8 +302,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <legend class="legend">When? <span class="opt">(optional)</span></legend>
         <div class="chips">
           <label class="chip"><input type="radio" name="when" value="As soon as possible"><span>As soon as possible</span></label>
-          <label class="chip"><input type="radio" name="when" value="This fall"><span>This fall</span></label>
-          <label class="chip"><input type="radio" name="when" value="Next spring"><span>Next spring</span></label>
+          <label class="chip"><input type="radio" name="when" value="In the next few months"><span>In the next few months</span></label>
           <label class="chip"><input type="radio" name="when" value="Just planning"><span>Just planning</span></label>
         </div>
       </fieldset>
@@ -321,18 +317,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
-<canvas class="lawn" aria-hidden="true"></canvas>
+<canvas class="lawn" data-top="#14335b" data-bottom="#173a66" aria-hidden="true"></canvas>
 
 <section class="close sec" aria-labelledby="h-close">
   <div class="wrap close-grid">
     <div>
       <h2 id="h-close">Have a project in mind?</h2>
-      <p class="lede">We're here to help bring your vision to life.</p>
-      <p class="offer">Book now: 10% off seasonal cleanup</p>
+      <p class="lede">You'll be talking with Jeff Alvarado, our general contractor, from your first text on.</p>
+      <p class="offer">Right now: 10% off seasonal cleanup.</p>
     </div>
     <div>
       <a class="btn btn-gold js-sms" href="sms:+17323280507?&amp;body=Hi%20Jeff%2C%20I%20have%20a%20project%20in%20mind%3A%20" data-body="Hi Jeff, I have a project in mind: "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>Text Jeff your idea</a>
-      <p class="or">or call <a href="tel:+17323280507">732-328-0507</a></p>
       <div class="where">
         <span><b>Based in South Bound Brook, NJ</b></span>
         <span>Building across Central New Jersey</span>
@@ -445,25 +440,32 @@ var Lawn = (function(){
   return { make: make, step: step, draw: draw, T: T };
 })();
 
-/* ---------- Lawn strips between sections ---------- */
+/* ---------- Lawn strips between sections: the lower sheet's color rises under the grass ---------- */
 (function(){
+  var SEAM = { MID: 0.5, A1: 5, A2: 3, S1: 1.2, S2: 1.9 };   // seam height, wave sizes, wave speeds
   document.querySelectorAll('canvas.lawn').forEach(function(cv){
     var c = cv.getContext('2d'), tufts = [], w = 0, h = 0, dpr = Math.min(1.5, window.devicePixelRatio || 1);
+    var top = cv.getAttribute('data-top'), bottom = cv.getAttribute('data-bottom');
+    cv.style.background = top;
+    function seam(x, t){ return h * SEAM.MID + SEAM.A1 * Math.sin(x * 0.018 + t * SEAM.S1) + SEAM.A2 * Math.sin(x * 0.041 - t * SEAM.S2); }
     function build(){
       var nw = Math.round(cv.clientWidth), nh = Math.round(cv.clientHeight);
       if (nw === w && nh === h) return; w = nw; h = nh;
       cv.width = w * dpr; cv.height = h * dpr; tufts = [];
-      var sp = 11;
-      for (var y = 10; y < h + 2; y += sp * 0.75) for (var x = 4; x < w; x += sp){
-        var edge = Math.min(y, h - y + 8) / (h / 2);
-        if (Math.random() < 0.35 + edge * 0.6) tufts.push(Lawn.make(x + (Math.random() - .5) * sp, y + (Math.random() - .5) * 5));
+      for (var x = 3; x < w; x += 7){
+        var n = Math.random() < 0.55 ? 2 : 1;
+        for (var k = 0; k < n; k++){ var g = Lawn.make(x + (Math.random() - .5) * 6, 0); g.dy = -2 + Math.random() * 16; tufts.push(g); }
       }
       paint(0, 0);
     }
     function paint(t, dt){
-      var r = cv.getBoundingClientRect();
+      var r = cv.getBoundingClientRect(), i;
+      for (i = 0; i < tufts.length; i++) tufts[i].y = seam(tufts[i].x, t) + tufts[i].dy;
       if (dt) Lawn.step(tufts, Ptr.on ? Ptr.x - r.left : -9999, Ptr.on ? Ptr.y - r.top : -9999, Ptr.vx, Ptr.vy, dt);
       c.setTransform(dpr, 0, 0, dpr, 0, 0); c.clearRect(0, 0, w, h);
+      c.fillStyle = bottom; c.beginPath(); c.moveTo(0, h + 1);
+      for (var x = 0; x <= w + 8; x += 8) c.lineTo(x, seam(x, t));
+      c.lineTo(w, h + 1); c.closePath(); c.fill();
       Lawn.draw(c, tufts, t);
     }
     build(); window.addEventListener('resize', build);
