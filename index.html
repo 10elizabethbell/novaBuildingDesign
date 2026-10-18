@@ -157,6 +157,13 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 footer a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 footer a:hover{color:var(--gold-hi);text-decoration:underline}
 
+@media (max-width:379px){
+  .word b{font-size:19px;letter-spacing:.28em}
+  .word span{font-size:10.5px;letter-spacing:.03em}
+  .tel{font-size:15px;gap:5px}
+  .btn{padding:0 10px;font-size:17px}
+}
+
 /* ---------- Wider screens ---------- */
 @media (min-width:700px){
   :root{--pad:32px}
@@ -480,7 +487,7 @@ var Lawn = (function(){
   var cv = document.getElementById('plan'); if (!cv) return;
   var c = cv.getContext('2d'), base = document.createElement('canvas'), bc = base.getContext('2d');
   var laid = document.createElement('canvas'), lc = laid.getContext('2d'), probe = document.createElement('canvas').getContext('2d');
-  var W = 0, H = 0, dpr = 1, patio, pieces = [], order = [], tufts = [], fire = null, noise;
+  var W = 0, H = 0, dpr = 1, patio, paving, pieces = [], order = [], tufts = [], fire = null, noise;
   var autoIdx = 0, acc = 0, lastTouch = -1e9, doneAt = 0, fading = 0, fireOn = 0, embers = [], animating = [];
 
   function rnd(a, b){ return a + Math.random() * (b - a); }
@@ -521,6 +528,7 @@ var Lawn = (function(){
     patio.closePath();
     var fr = Math.min(rx, ry) * 0.26;
     fire = { x: cx + rx * 0.4, y: cy + ry * 0.12, r: fr };
+    paving = new Path2D(patio); paving.moveTo(fire.x + fr * 1.18, fire.y); paving.arc(fire.x, fire.y, fr * 1.18, 0, 6.2832);
 
     pieces = []; order = [];
     // Pavers: random-length running bond, rows from the house outward
@@ -532,7 +540,7 @@ var Lawn = (function(){
         var mx = x0 + w / 2, my = y0 + u / 2;
         var inP = probe.isPointInPath(patio, mx, my) || probe.isPointInPath(patio, x0 + 1, my) || probe.isPointInPath(patio, x0 + w - 1, my) || probe.isPointInPath(patio, mx, y0 + 1) || probe.isPointInPath(patio, mx, y0 + u - 1);
         var df = Math.hypot(mx - fire.x, my - fire.y);
-        if (inP && df > fire.r * 1.32) rowPieces.push({ k: 'p', x: x0, y: y0, w: w, h: u, cx: mx, cy: my, col: shade(pick(STONE), rnd(.9, 1.1)), s: 0 });
+        if (inP && df > fire.r * 0.7) rowPieces.push({ k: 'p', x: x0, y: y0, w: w, h: u, cx: mx, cy: my, col: shade(pick(STONE), rnd(.9, 1.1)), s: 0 });
         x0 += w;
       }
       if (rowIdx % 2) rowPieces.reverse();
@@ -642,7 +650,7 @@ var Lawn = (function(){
   }
   function bake(p){
     lc.setTransform(dpr, 0, 0, dpr, 0, 0);
-    if (p.k === 'p'){ lc.save(); lc.clip(patio); drawPiece(lc, p, 1); lc.restore(); } else drawPiece(lc, p, 1);
+    if (p.k === 'p'){ lc.save(); lc.clip(paving, 'evenodd'); drawPiece(lc, p, 1); lc.restore(); } else drawPiece(lc, p, 1);
   }
   function lay(p, now){ if (p.s) return; p.s = 1; p.t0 = now; animating.push(p); }
 
@@ -687,7 +695,7 @@ var Lawn = (function(){
     for (var n = 0; n < animating.length; n++){
       var o = animating[n], k = Math.min(1, (now - o.t0) / T.DROP);
       var e = 1 - Math.pow(1 - k, 3);
-      if (o.k === 'p'){ c.save(); c.clip(patio); drawPiece(c, o, e); c.restore(); } else drawPiece(c, o, e);
+      if (o.k === 'p'){ c.save(); c.clip(paving, 'evenodd'); drawPiece(c, o, e); c.restore(); } else drawPiece(c, o, e);
     }
     if (fireOn > 0) drawFire(t, dt, px, py);
     Lawn.draw(c, tufts, t);
