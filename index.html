@@ -75,7 +75,7 @@ h2{font-size:clamp(38px,9vw,64px)}
 .btn-line:hover{background:rgba(217,207,69,.12);color:var(--gold-hi)}
 .plan-box{position:relative;height:clamp(300px,46svh,440px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ground)}
 #plan{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:crosshair;-webkit-user-select:none;user-select:none}
-.plan-hint{position:absolute;right:12px;bottom:10px;margin:0;font:700 12px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);pointer-events:none;padding:4px 8px;background:rgba(23,58,102,.82);border-radius:4px}
+.plan-hint{position:absolute;right:12px;bottom:10px;margin:0;font:700 12px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);pointer-events:none}
 
 /* ---------- Lawn strips (dividers) ---------- */
 .lawn{display:block;width:100%;height:56px;margin:-1px 0;touch-action:pan-y}
@@ -178,7 +178,7 @@ footer a:hover{color:var(--gold-hi);text-decoration:underline}
   .plan-hint{right:20px;bottom:16px}
   .top{max-width:1440px;padding:16px 48px}
   .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
-  .shots{grid-template-columns:2fr 1fr;align-items:start}
+  .shots{grid-template-columns:1fr calc((100% - 38.67px) / 3);align-items:start}
   .shot:first-child{grid-column:auto;grid-row:span 2}
   .est-grid{display:grid;grid-template-columns:.85fr 1fr;gap:64px;align-items:start}
   .est-grid .steps{margin-top:8px}
