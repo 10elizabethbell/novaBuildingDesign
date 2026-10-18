@@ -159,7 +159,7 @@ footer a:hover{color:var(--gold-hi);text-decoration:underline}
 
 @media (max-width:379px){
   .word b{font-size:19px;letter-spacing:.28em}
-  .word span{font-size:10.5px;letter-spacing:.03em}
+  .word span{font-size:11px;letter-spacing:.02em}
   .tel{font-size:15px;gap:5px}
   .btn{padding:0 10px;font-size:17px}
 }
@@ -750,13 +750,14 @@ var Lawn = (function(){
   function bad(id, on){ document.getElementById(id).classList.toggle('bad', on); }
   f.addEventListener('submit', function(e){
     e.preventDefault();
-    var name = f.name.value.trim(), town = f.town.value.trim();
+    var nameEl = document.getElementById('name'), townEl = document.getElementById('town');
+    var name = nameEl.value.trim(), town = townEl.value.trim();
     var proj = Array.prototype.map.call(f.querySelectorAll('input[name=proj]:checked'), function(i){ return i.value; });
     var when = (f.querySelector('input[name=when]:checked') || {}).value || '';
-    var details = f.details.value.trim();
+    var details = document.getElementById('details').value.trim();
     bad('f-name', !name); bad('f-town', !town); bad('f-proj', !proj.length);
-    if (!name){ f.name.focus(); return; }
-    if (!town){ f.town.focus(); return; }
+    if (!name){ nameEl.focus(); return; }
+    if (!town){ townEl.focus(); return; }
     if (!proj.length){ f.querySelector('input[name=proj]').focus(); return; }
     var msg = 'Hi Jeff, I\'d like a free estimate.\nName: ' + name + '\nTown: ' + town + '\nProject: ' + proj.join(', ');
     if (when) msg += '\nWhen: ' + when;
@@ -766,7 +767,7 @@ var Lawn = (function(){
     s.classList.add('on');
     window.location.href = window.NOVA_SMS(msg);
   });
-  ['name', 'town'].forEach(function(n){ f[n].addEventListener('input', function(){ if (f[n].value.trim()) bad('f-' + n, false); }); });
+  ['name', 'town'].forEach(function(n){ var el = document.getElementById(n); el.addEventListener('input', function(){ if (el.value.trim()) bad('f-' + n, false); }); });
   f.addEventListener('change', function(e){ if (e.target.name === 'proj') bad('f-proj', false); });
 })();
 
