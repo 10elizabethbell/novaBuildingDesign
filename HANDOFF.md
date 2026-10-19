@@ -46,7 +46,7 @@
 
 ## Review record
 - Impeccable finish reviewer, 2 rounds (the unattended ceiling). Round 1: 7 fixes, all applied. Round 2: the fire-pit icon redraw was scored resolved; the desktop photo grid was scored partial (columns ended 18px apart). I fixed the grid after round 2 by solving the column widths (`1fr calc((100% - 38.67px)/3)`) and measured equal bottoms at 1440 and 1100. The reviewer didn't re-score that last fix, and it never gave a ship verdict.
-- Detector ignores I added (`.impeccable/config.json`): `broken-image` (lazy data-block images), `overused-font roboto` (system stack, house style), `cramped-padding` (list rule above padded rows). I left 2 all-caps label findings standing: the drag hint and the Facebook link.
+- Detector ignores I added (`.impeccable/config.json`): `broken-image` (lazy data-block images), `overused-font roboto` (system stack, house style), `cramped-padding` (list rule above padded rows). `design-system-*` one-offs the documenter left out of DESIGN.md (1 radius, 2 colors, 8 font sizes), and `all-caps-body` scoped to `index.html`: it only fires on two one-line labels (the drag hint and the Facebook link, 32 and 37 characters). Remove that ignore if you'd rather set those two in sentence case.
 - Impeccable modes beyond the finish review (audit, harden, clarify, adapt, optimize) were done in-thread, not as separate runs: contrast checked by value, form harden (fields read by id, validation tested), overflow at 360/390/520/1440, text-body encoding tested.
 
 ## Not verified
