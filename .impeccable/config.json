@@ -92,6 +92,15 @@
         "value": "72px",
         "createdAt": "2026-10-18T19:52:46.322Z",
         "reason": "Claude: shipped, finish-reviewed one-off value that the documenter deliberately left out of the DESIGN.md scale (DESIGN.md was derived from this build)"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T23:26:10.789Z",
+        "reason": "Claude: only two one-line labels (32 and 37 chars: drag hint, Facebook link) set in the logo's condensed caps; no body passages are uppercase"
       }
     ]
   }
